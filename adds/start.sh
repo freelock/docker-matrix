@@ -27,7 +27,6 @@ case $OPTION in
 		echo "-=> Matrix Version: ${VERSION}"
 		;;
 	"generate")
-		echo "-=> the function generate is deprecated"
 		turnkey=$(pwgen -s 64 1)
 		echo "-=> generate turn config"
 		echo "lt-cred-mech" > /data/turnserver.conf
@@ -57,4 +56,3 @@ case $OPTION in
 		echo "-=> unknown \'$OPTION\'"
 		;;
 esac
-
