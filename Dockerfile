@@ -37,6 +37,9 @@ RUN chmod a+x /start.sh
 # startup configuration
 CMD ["/start.sh", "start"]
 EXPOSE 8448
+EXPOSE 3478
+EXPOSE 3478/udp
+
 VOLUME ["/data"]
 
 # install synapse homeserver
