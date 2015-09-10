@@ -31,7 +31,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
       matrix-synapse-angular-client
 
 # install homerserver template
-COPY start.sh /start.sh
+COPY adds/start.sh /start.sh
 RUN chmod a+x /start.sh
 
 # startup configuration
